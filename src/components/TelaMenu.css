@@ -1,0 +1,23 @@
+.container__menu{
+    background-image: url("../images/tela_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    
+}
+.lista{
+    max-height: 10vh;
+}
+
+.slides{
+    max-height: 10rem;
+}
+@media(max-width: 992px){
+    .lista{
+        padding: 6rem;
+    }
+    
+}

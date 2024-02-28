@@ -1,0 +1,95 @@
+:root{
+  
+    --color-red-pizza:#bc2c24;
+    --color-yellow-pizza:#f3a933;
+    --color-primary: #бC9BсЕ;
+    --color-danger: #FF0060;
+    --color-success: #1B9C85;
+    --color-warning: #F7D060;
+    --color-white: #fff;
+    --color-info-dark: #7d8dal;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+    
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+    --card-padding: 1.8rem;
+    
+    --padding-1: 1.2rem;
+    --box-shadow: O2rem 3rem var(--color-light);
+}
+.container__cabecalho{
+    top: 0;
+    height: 15vh;
+    width: 101%;
+    position: fixed;
+    z-index: 1000;
+
+    background-color: var(--color-red-pizza);
+}
+.logo{
+    height: 15vh;
+    padding: .4rem;
+}
+.logo img{
+    
+    max-width: 11rem;
+}
+
+.botao{
+    height: 15vh;
+    display: flex;
+    text-align: center;
+    padding:3rem;
+    justify-content:space-around ;
+}
+.botao__cabecalho{
+    background-color: var(--color-yellow-pizza);
+    opacity: 0.85;
+    color: var(--color-dark);
+}
+.link_nav{
+    padding: 1rem;
+    align-items: center;
+    border-radius: 1rem;
+
+}
+.botao__cabecalho:hover{
+    opacity: 1;
+}
+.contatos{
+    height: 15vh;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.contatos img{
+    max-width: 10rem;
+    max-height: 3rem;
+    cursor: pointer;
+}
+
+@media(max-width: 576px){
+    .menuHamburguer{
+        margin: 0 0 0 0;
+        padding: 0 10rem 0 0 ;
+    }
+    .a__header{
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+}
+@media(max-width: 992px){
+    .botao{
+       
+        gap: 2rem;
+    }
+
+    .menuHamburguer{
+        margin: -1.2em 0 0 0;
+    }
+}

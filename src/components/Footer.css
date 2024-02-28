@@ -1,0 +1,22 @@
+.row{
+    height: 15vh;
+}
+.rodape{
+    background-color: var(--color-red-pizza);
+}
+.RODAPE{
+    width: 100%;
+    
+}
+.rodape__contatos{
+    display: flex;
+    color: var(--color-background);
+    font-weight: bold;
+}
+.rodape__creditos{
+    color: var(--color-background);
+    font-weight: bold;
+}
+.dropdown__rodape{
+    padding-bottom: 1rem;
+}

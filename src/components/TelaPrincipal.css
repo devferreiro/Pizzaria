@@ -1,0 +1,140 @@
+:root{
+    --color-red-pizza: red;
+    --color-primary: #бC9BсЕ;
+    --color-danger: #FF0060;
+    --color-success: #1B9C85;
+    --color-warning: #F7D060;
+    --color-white: #fff;
+    --color-info-dark: #7d8dal;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+    
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+    --card-padding: 1.8rem;
+    
+    --padding-1: 1.2rem;
+    --box-shadow: 2rem 3rem var(--color-yellow-pizza);
+  }
+.container__main{
+    
+    background-image: url("../images/tela_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+   
+    
+}
+.comida{
+    max-height: 30rem;
+}
+.container__descricao h3{
+    color: var(--color-background);
+    font-size: 1.2rem ;
+}
+.container__descricao h1{
+    color: var(--color-background);
+    font-size: 4rem;
+    font-weight: bold;
+    align-items: center;
+}
+.conteudo{
+    padding-top: 19vh;
+    max-height: 70vh;
+}
+.link{
+    display: flex;
+    gap: 2rem;
+}
+.link__direcional{
+    margin-left: 4rem;
+    margin-top: 1rem;
+    padding: .6rem;
+    background-color: var(--color-background);
+    color: var(--color-dark);
+    font-weight: bold;
+    border-radius: 3rem;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+.link__direcional:hover{
+    transition: .4s;
+    background-color: transparent;
+    border: 2px solid var(--color-background);
+    color: var(--color-background);
+}
+
+.atrativo{
+    color: var(--color-dark);
+    text-align: center;
+    max-height: 10vh;
+
+    /*LEMBRAR DE MUDAR NO @MEDIA*/
+    padding-top: 70vh;
+    
+    
+}
+.atrativo h2{
+    font-weight: bold;
+}
+@media(max-width: 992px){
+    .container__main{
+        width: 100vw;
+        height: 100vh;
+    }
+    .link{
+        gap: 0;
+    }
+    .link__direcional{
+        margin: 0;
+    }
+    .comida{
+        max-height: 20rem;
+    }
+}
+@media(max-width: 768px){
+    .container__main{
+        width: 100vw;
+        height: 100vh;
+    }
+    .link{
+        gap: 2rem;
+    }
+    .link__direcional{
+        margin-left: 9rem;
+    }
+    .comida{
+        display: none;
+    }
+}
+@media(max-width: 576px){
+    .link{
+        gap: 0;
+    }
+    .link__direcional{
+        margin: 0 0 0 em;
+        padding: 1.4rem;
+    }
+    .link{
+        gap: 1em;
+    }
+    .link__direcional{
+        margin-left: 2rem ;
+        padding: .6em;
+        border-radius: 1em;
+    }
+    .link__direcional:hover{
+        transition: none;
+        background-color: none;
+        border: none;
+        color: none
+    }
+}
